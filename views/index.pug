@@ -1,0 +1,18 @@
+extends layout
+
+block content
+
+  h1 Mi portafolio personal
+  p
+    | En este portafolio, podrás encontrar información sobre mis habilidades y experiencia.
+
+  // Contenido dinámico
+  section
+    img(src=imagen,class="image")
+    h2 Mi información
+    p
+      | Soy un desarrollador web con experiencia en HTML, CSS y JavaScript.
+    p
+      | #{nombre}
+    p
+      | Estoy interesado en el desarrollo de aplicaciones web y móviles.

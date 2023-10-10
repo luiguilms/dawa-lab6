@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  h1 Contacto
+  p
+    | Si tienes alguna pregunta o quieres trabajar conmigo, no dudes en ponerte en contacto conmigo.
+  form(action="/contact" method="post")
+    .input
+      input(type="text" name="nombre" placeholder="Nombre" class="form-control")
+    .input
+      input(type="email" name="correo" placeholder="Correo electrónico" class="form-control")
+    .input
+      textarea(name="mensaje" placeholder="Mensaje" class="form-control")
+    .input
+      input(type="submit" value="Enviar" class="btn btn-primary")
